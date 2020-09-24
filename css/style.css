@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "work sans", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #333;
+  color: #fff;
+  opacity: 0.75;
+  height: 70px;
+  width: 100%;
+  z-index: 11;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px 0;
+  color: #fff;
+}
+
+.navbar ul a:hover {
+  border-bottom: solid 3px #b52b65;
+}
+
+.logo a {
+  color: #fff;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("../images/restaurant.jpg") no-repeat center center/cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.content .btn:hover {
+  background: #b52b65;
+}
+
+/* icons */
+.icons i {
+  margin: 40px 0 20px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.icons h3 {
+  font-size: 24px;
+}
+
+.icons p {
+  margin: 10px 15px;
+}
+
+/* Contact & footer */
+#contact {
+  background: #444;
+  color: #fff
+}
+
+#contact .section-header {
+  height: 150px;
+}
+
+.message {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.message .form-control {
+  margin-bottom: 12px;
+}
+
+.form-control input {
+  height: 50px;
+  width: 100%;
+  padding: 4px;
+  border: none;
+}
+
+.form-control .jaza {
+  background: #444;
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+}
+
+.form-control textarea {
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control input,
+.form-control textarea {
+  border-bottom: 3px solid #f5f5f5;
+  border-radius: 0;
+}
+
+.form-control .submit {
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* social */
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 30px 10px 0;
+}
+
+.social i {
+  margin: 0 40px 20px;
+}
+
+.social a {
+  color: #fff;
+}
+
+.social i:hover {
+  color: #ed6663;
+}
