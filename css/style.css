@@ -197,3 +197,56 @@ a {
 .social i:hover {
   color: #ed6663;
 }
+
+/* Mobile view */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    font-size: small;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    height: 90px;
+    justify-content: center;
+  }
+
+  .navbar ul a {
+    padding: 5px 5px;
+    margin: 5px;
+  }
+
+  .flex-columns .column1 {
+    display: none;
+  }
+
+  .flex-grid .row {
+    flex-direction: column;
+  }
+
+  .flex-grid .row .column {
+    flex: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .flex-grid .row .column img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  #contact .section-header {
+    height: 220px;
+  }
+
+  .message {
+    max-width: 350px;
+  }
+
+
+}
