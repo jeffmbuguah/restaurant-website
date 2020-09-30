@@ -10,6 +10,7 @@ body {
   font-family: "work sans", sans-serif;
   line-height: 1.5;
   color: #333;
+  font-size: 0.9rem;
 }
 
 h1,
@@ -127,7 +128,7 @@ a {
 /* Contact & footer */
 #contact {
   background: #444;
-  color: #fff
+  color: #fff;
 }
 
 #contact .section-header {
@@ -135,7 +136,7 @@ a {
 }
 
 .message {
-  max-width: 500px;
+  max-width: 30rem;
   margin: 0 auto;
 }
 
@@ -240,7 +241,15 @@ a {
     flex-direction: column;
   }
 
+  .icons i {
+    margin: 20px 0 10px;
+  }
+
   #contact .section-header {
+    height: 220px;
+  }
+
+  .section-header {
     height: 220px;
   }
 
@@ -248,5 +257,7 @@ a {
     max-width: 350px;
   }
 
-
+  .social i {
+    margin: 0 10px 20px;
+  }
 }
